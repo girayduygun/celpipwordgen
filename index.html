@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Word Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <!-- <h1>Random Word Generator</h1> -->
+
+
+        <div id="word"></div>
+
+        <div id="meanings">
+            <div id="turkishMeaning" style="display: none;"></div>
+            <div id="sourceMeaning"></div>
+        </div>
+
+        
+        <button onclick="generateRandomWord()">Generate Random Word</button>
+        <button onclick="undoWord()">Undo</button>
+        <button onclick="showWordInOrder()">Show Words in Order</button>
+
+
+        <button onclick="toggleMeaning()">Show/Hide Turkish Meaning</button>
+
+        <!-- Source selection dropdown -->
+        <div>
+            <label for="sourceSelector">Select a word by Source: </label>
+            <select id="sourceSelector" onchange="selectWordBySource()">
+                <option value="">All Sources</option> <!-- New option to reset to all words -->
+                <option value="	CELPIP-Word List	">CELPIP-Word List</option>
+            </select>
+        </div>
+
+    </div>
+
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
