@@ -23,7 +23,7 @@ function displayWord(index) {
   document.getElementById("word").innerHTML = randomWord.french;
   document.getElementById(
     "turkishMeaning"
-  ).innerHTML = `Turkish: ${randomWord.turkish}`;
+  ).innerHTML = ` ${randomWord.turkish}`;
   document.getElementById(
     "sourceMeaning"
   ).innerHTML = `Source: ${randomWord.source}`;
